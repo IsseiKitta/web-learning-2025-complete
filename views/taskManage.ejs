@@ -1,0 +1,518 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-gray-50 group/design-root overflow-x-hidden"
+      style="
+        --checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(16,21,24)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');
+        font-family: Inter, 'Noto Sans', sans-serif;
+      "
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header
+          class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#eaedf1] px-10 py-3"
+        >
+          <div class="flex items-center gap-4 text-[#101518]">
+            <div class="size-4">
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 6H42L36 24L42 42H6L12 24L6 6Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2
+              class="text-[#101518] text-lg font-bold leading-tight tracking-[-0.015em]"
+            >
+              TaskMaster
+            </h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a
+                class="text-[#101518] text-sm font-medium leading-normal"
+                href="#"
+                >Home</a
+              >
+              <a
+                class="text-[#101518] text-sm font-medium leading-normal"
+                href="#"
+                >Features</a
+              >
+              <a
+                class="text-[#101518] text-sm font-medium leading-normal"
+                href="#"
+                >Pricing</a
+              >
+            </div>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#dce8f3] text-[#101518] text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">Get Started</span>
+            </button>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div
+            class="layout-content-container flex flex-col max-w-[960px] flex-1"
+          >
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <p
+                class="text-[#101518] tracking-light text-[32px] font-bold leading-tight min-w-72"
+              >
+                My Tasks
+              </p>
+            </div>
+            <div class="flex gap-4 bg-gray-50 px-4 py-3 justify-between">
+              <div class="flex items-start gap-4">
+                <div class="flex size-7 items-center justify-center">
+                  <input
+                    type="checkbox"
+                    class="h-5 w-5 rounded border-[#d4dce2] border-2 bg-transparent text-[#dce8f3] checked:bg-[#dce8f3] checked:border-[#dce8f3] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d4dce2] focus:outline-none"
+                  />
+                </div>
+                <div class="flex flex-1 flex-col justify-center">
+                  <p
+                    class="text-[#101518] text-base font-medium leading-normal"
+                  >
+                    Prepare presentation for client meeting
+                  </p>
+                  <p class="text-[#5c748a] text-sm font-normal leading-normal">
+                    Type: Work
+                  </p>
+                  <p class="text-[#5c748a] text-sm font-normal leading-normal">
+                    Due: 2024-03-15
+                  </p>
+                </div>
+              </div>
+              <div class="shrink-0">
+                <div
+                  class="text-[#101518] flex size-7 items-center justify-center"
+                  data-icon="Trash"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24px"
+                    height="24px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-4 bg-gray-50 px-4 py-3 justify-between">
+              <div class="flex items-start gap-4">
+                <div class="flex size-7 items-center justify-center">
+                  <input
+                    type="checkbox"
+                    class="h-5 w-5 rounded border-[#d4dce2] border-2 bg-transparent text-[#dce8f3] checked:bg-[#dce8f3] checked:border-[#dce8f3] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d4dce2] focus:outline-none"
+                  />
+                </div>
+                <div class="flex flex-1 flex-col justify-center">
+                  <p
+                    class="text-[#101518] text-base font-medium leading-normal"
+                  >
+                    Schedule dentist appointment
+                  </p>
+                  <p class="text-[#5c748a] text-sm font-normal leading-normal">
+                    Type: Personal
+                  </p>
+                  <p class="text-[#5c748a] text-sm font-normal leading-normal">
+                    Due: 2024-03-16
+                  </p>
+                </div>
+              </div>
+              <div class="shrink-0">
+                <div
+                  class="text-[#101518] flex size-7 items-center justify-center"
+                  data-icon="Trash"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24px"
+                    height="24px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-4 bg-gray-50 px-4 py-3 justify-between">
+              <div class="flex items-start gap-4">
+                <div class="flex size-7 items-center justify-center">
+                  <input
+                    type="checkbox"
+                    class="h-5 w-5 rounded border-[#d4dce2] border-2 bg-transparent text-[#dce8f3] checked:bg-[#dce8f3] checked:border-[#dce8f3] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d4dce2] focus:outline-none"
+                  />
+                </div>
+                <div class="flex flex-1 flex-col justify-center">
+                  <p
+                    class="text-[#101518] text-base font-medium leading-normal"
+                  >
+                    Grocery shopping
+                  </p>
+                  <p class="text-[#5c748a] text-sm font-normal leading-normal">
+                    Type: Errands
+                  </p>
+                  <p class="text-[#5c748a] text-sm font-normal leading-normal">
+                    Due: 2024-03-17
+                  </p>
+                </div>
+              </div>
+              <div class="shrink-0">
+                <div
+                  class="text-[#101518] flex size-7 items-center justify-center"
+                  data-icon="Trash"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24px"
+                    height="24px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-4 bg-gray-50 px-4 py-3 justify-between">
+              <div class="flex items-start gap-4">
+                <div class="flex size-7 items-center justify-center">
+                  <input
+                    type="checkbox"
+                    class="h-5 w-5 rounded border-[#d4dce2] border-2 bg-transparent text-[#dce8f3] checked:bg-[#dce8f3] checked:border-[#dce8f3] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d4dce2] focus:outline-none"
+                  />
+                </div>
+                <div class="flex flex-1 flex-col justify-center">
+                  <p
+                    class="text-[#101518] text-base font-medium leading-normal"
+                  >
+                    Review project proposal
+                  </p>
+                  <p class="text-[#5c748a] text-sm font-normal leading-normal">
+                    Type: Work
+                  </p>
+                  <p class="text-[#5c748a] text-sm font-normal leading-normal">
+                    Due: 2024-03-18
+                  </p>
+                </div>
+              </div>
+              <div class="shrink-0">
+                <div
+                  class="text-[#101518] flex size-7 items-center justify-center"
+                  data-icon="Trash"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24px"
+                    height="24px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-4 bg-gray-50 px-4 py-3 justify-between">
+              <div class="flex items-start gap-4">
+                <div class="flex size-7 items-center justify-center">
+                  <input
+                    type="checkbox"
+                    class="h-5 w-5 rounded border-[#d4dce2] border-2 bg-transparent text-[#dce8f3] checked:bg-[#dce8f3] checked:border-[#dce8f3] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d4dce2] focus:outline-none"
+                  />
+                </div>
+                <div class="flex flex-1 flex-col justify-center">
+                  <p
+                    class="text-[#101518] text-base font-medium leading-normal"
+                  >
+                    Book weekend getaway
+                  </p>
+                  <p class="text-[#5c748a] text-sm font-normal leading-normal">
+                    Type: Personal
+                  </p>
+                  <p class="text-[#5c748a] text-sm font-normal leading-normal">
+                    Due: 2024-03-19
+                  </p>
+                </div>
+              </div>
+              <div class="shrink-0">
+                <div
+                  class="text-[#101518] flex size-7 items-center justify-center"
+                  data-icon="Trash"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24px"
+                    height="24px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-4 bg-gray-50 px-4 py-3 justify-between">
+              <div class="flex items-start gap-4">
+                <div class="flex size-7 items-center justify-center">
+                  <input
+                    type="checkbox"
+                    class="h-5 w-5 rounded border-[#d4dce2] border-2 bg-transparent text-[#dce8f3] checked:bg-[#dce8f3] checked:border-[#dce8f3] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d4dce2] focus:outline-none"
+                  />
+                </div>
+                <div class="flex flex-1 flex-col justify-center">
+                  <p
+                    class="text-[#101518] text-base font-medium leading-normal"
+                  >
+                    Pay bills
+                  </p>
+                  <p class="text-[#5c748a] text-sm font-normal leading-normal">
+                    Type: Errands
+                  </p>
+                  <p class="text-[#5c748a] text-sm font-normal leading-normal">
+                    Due: 2024-03-20
+                  </p>
+                </div>
+              </div>
+              <div class="shrink-0">
+                <div
+                  class="text-[#101518] flex size-7 items-center justify-center"
+                  data-icon="Trash"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24px"
+                    height="24px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-4 bg-gray-50 px-4 py-3 justify-between">
+              <div class="flex items-start gap-4">
+                <div class="flex size-7 items-center justify-center">
+                  <input
+                    type="checkbox"
+                    class="h-5 w-5 rounded border-[#d4dce2] border-2 bg-transparent text-[#dce8f3] checked:bg-[#dce8f3] checked:border-[#dce8f3] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d4dce2] focus:outline-none"
+                  />
+                </div>
+                <div class="flex flex-1 flex-col justify-center">
+                  <p
+                    class="text-[#101518] text-base font-medium leading-normal"
+                  >
+                    Follow up with potential clients
+                  </p>
+                  <p class="text-[#5c748a] text-sm font-normal leading-normal">
+                    Type: Work
+                  </p>
+                  <p class="text-[#5c748a] text-sm font-normal leading-normal">
+                    Due: 2024-03-21
+                  </p>
+                </div>
+              </div>
+              <div class="shrink-0">
+                <div
+                  class="text-[#101518] flex size-7 items-center justify-center"
+                  data-icon="Trash"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24px"
+                    height="24px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-4 bg-gray-50 px-4 py-3 justify-between">
+              <div class="flex items-start gap-4">
+                <div class="flex size-7 items-center justify-center">
+                  <input
+                    type="checkbox"
+                    class="h-5 w-5 rounded border-[#d4dce2] border-2 bg-transparent text-[#dce8f3] checked:bg-[#dce8f3] checked:border-[#dce8f3] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d4dce2] focus:outline-none"
+                  />
+                </div>
+                <div class="flex flex-1 flex-col justify-center">
+                  <p
+                    class="text-[#101518] text-base font-medium leading-normal"
+                  >
+                    Plan family dinner
+                  </p>
+                  <p class="text-[#5c748a] text-sm font-normal leading-normal">
+                    Type: Personal
+                  </p>
+                  <p class="text-[#5c748a] text-sm font-normal leading-normal">
+                    Due: 2024-03-22
+                  </p>
+                </div>
+              </div>
+              <div class="shrink-0">
+                <div
+                  class="text-[#101518] flex size-7 items-center justify-center"
+                  data-icon="Trash"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24px"
+                    height="24px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-4 bg-gray-50 px-4 py-3 justify-between">
+              <div class="flex items-start gap-4">
+                <div class="flex size-7 items-center justify-center">
+                  <input
+                    type="checkbox"
+                    class="h-5 w-5 rounded border-[#d4dce2] border-2 bg-transparent text-[#dce8f3] checked:bg-[#dce8f3] checked:border-[#dce8f3] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d4dce2] focus:outline-none"
+                  />
+                </div>
+                <div class="flex flex-1 flex-col justify-center">
+                  <p
+                    class="text-[#101518] text-base font-medium leading-normal"
+                  >
+                    Renew gym membership
+                  </p>
+                  <p class="text-[#5c748a] text-sm font-normal leading-normal">
+                    Type: Errands
+                  </p>
+                  <p class="text-[#5c748a] text-sm font-normal leading-normal">
+                    Due: 2024-03-23
+                  </p>
+                </div>
+              </div>
+              <div class="shrink-0">
+                <div
+                  class="text-[#101518] flex size-7 items-center justify-center"
+                  data-icon="Trash"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24px"
+                    height="24px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-4 bg-gray-50 px-4 py-3 justify-between">
+              <div class="flex items-start gap-4">
+                <div class="flex size-7 items-center justify-center">
+                  <input
+                    type="checkbox"
+                    class="h-5 w-5 rounded border-[#d4dce2] border-2 bg-transparent text-[#dce8f3] checked:bg-[#dce8f3] checked:border-[#dce8f3] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d4dce2] focus:outline-none"
+                  />
+                </div>
+                <div class="flex flex-1 flex-col justify-center">
+                  <p
+                    class="text-[#101518] text-base font-medium leading-normal"
+                  >
+                    Attend industry conference
+                  </p>
+                  <p class="text-[#5c748a] text-sm font-normal leading-normal">
+                    Type: Work
+                  </p>
+                  <p class="text-[#5c748a] text-sm font-normal leading-normal">
+                    Due: 2024-03-24
+                  </p>
+                </div>
+              </div>
+              <div class="shrink-0">
+                <div
+                  class="text-[#101518] flex size-7 items-center justify-center"
+                  data-icon="Trash"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24px"
+                    height="24px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

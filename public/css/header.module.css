@@ -1,0 +1,74 @@
+:root {
+  /* フォントの定義 */
+  --font-family-base: Inter, "Noto Sans", sans-serif;
+
+  /* 色の定義 */
+  --color-background: #f8fafc;
+  --color-text: #0d141c;
+}
+
+body {
+  /* 必須の処理 */
+  margin: 0;
+
+  /* ページ全体へ */
+  min-height: 100vh;
+}
+
+.page-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  /* todo: group/design-rootをどこかで素のCSSで再現する */
+}
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+
+  /* 親コンテナ内の利用可能な残りのスペースをすべて埋めるように伸びる */
+  flex-grow: 1;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justfiy-content: space-between;
+
+  /* 上下 左右 */
+  padding: 12px 40px;
+
+  border-bottom: 1px solid #e7edf4;
+
+  /* テキストが折り返され複数行になるのを防ぐ */
+  white-space: nowrap;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+
+  color: #0d141c;
+}
+
+.header-logo-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.header-logo-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.header-title {
+  color: #0d141c;
+}
