@@ -1,124 +1,49 @@
-<html>
+<!DOCTYPE html>
+<html lang="ja">
   <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
-    />
-
-    <title>Stitch Design</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskMaster - Login</title>
+    <link rel="stylesheet" href="/css/login.css" />
   </head>
   <body>
-    <div
-      class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden"
-      style="font-family: Inter, 'Noto Sans', sans-serif"
-    >
-      <div class="layout-container flex h-full grow flex-col">
-        <header
-          class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf4] px-10 py-3"
-        >
-          <div class="flex items-center gap-4 text-[#0d151c]">
-            <div class="size-4">
-              <svg
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 6H42L36 24L42 42H6L12 24L6 6Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </div>
-            <h2
-              class="text-[#0d151c] text-lg font-bold leading-tight tracking-[-0.015em]"
-            >
-              TaskMaster
-            </h2>
-          </div>
-          <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
-              <a
-                class="text-[#0d151c] text-sm font-medium leading-normal"
-                href="#"
-                >Features</a
-              >
-              <a
-                class="text-[#0d151c] text-sm font-medium leading-normal"
-                href="#"
-                >Templates</a
-              >
-              <a
-                class="text-[#0d151c] text-sm font-medium leading-normal"
-                href="#"
-                >Pricing</a
-              >
-            </div>
-            <button
-              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#0b80ee] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
-            >
-              <span class="truncate">Get Started</span>
-            </button>
-          </div>
-        </header>
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div
-            class="layout-content-container flex flex-col w-[512px] max-w-[512px] py-5 max-w-[960px] flex-1"
-          >
-            <h2
-              class="text-[#0d151c] tracking-light text-[28px] font-bold leading-tight px-4 text-center pb-3 pt-5"
-            >
-              Log in to TaskMaster
-            </h2>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p
-                  class="text-[#0d151c] text-base font-medium leading-normal pb-2"
-                >
-                  Login ID
-                </p>
-                <input
-                  placeholder="Enter your login ID"
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0d151c] focus:outline-0 focus:ring-0 border border-[#cedce8] bg-slate-50 focus:border-[#cedce8] h-14 placeholder:text-[#49749c] p-[15px] text-base font-normal leading-normal"
-                  value=""
-                />
-              </label>
-            </div>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p
-                  class="text-[#0d151c] text-base font-medium leading-normal pb-2"
-                >
-                  Password
-                </p>
-                <input
-                  placeholder="Enter your password"
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0d151c] focus:outline-0 focus:ring-0 border border-[#cedce8] bg-slate-50 focus:border-[#cedce8] h-14 placeholder:text-[#49749c] p-[15px] text-base font-normal leading-normal"
-                  value=""
-                />
-              </label>
-            </div>
-            <div class="w-full" style="height: 20px"></div>
-            <div class="flex px-4 py-3 justify-end">
-              <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#0b80ee] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
-              >
-                <span class="truncate">Log in</span>
-              </button>
-            </div>
-            <p
-              class="text-[#49749c] text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center underline"
-            >
-              Don't have an account? Sign up
-            </p>
-          </div>
-        </div>
+    <main class="page-container">
+      <div class="login-form__title-container">
+        <h1 class="login-form__title-text">Welcome back</h1>
       </div>
-    </div>
+      <form method="post" action="/login" class="login-form">
+        <div class="login-form__group">
+          <input
+            type="name"
+            placeholder="Name"
+            class="login-form__input"
+            name="name"
+            required
+          />
+        </div>
+        <div class="login-form__group">
+          <input
+            type="password"
+            placeholder="Password"
+            class="login-form__input"
+            name="password"
+            required
+          />
+        </div>
+        <div class="login-form__sing-up-container">
+          <a href="" class="login-form__sing-up"
+            >Don't have an account? Sign Up</a
+          >
+        </div>
+        <div class="login-form__log-in-container">
+          <button class="login-form__log-in-button" type="submit">
+            Log in
+          </button>
+        </div>
+        <div class="login-form__forgot-password-container">
+          <a href="" class="login-form__forgot-password">Forgot password?</a>
+        </div>
+      </form>
+    </main>
   </body>
 </html>

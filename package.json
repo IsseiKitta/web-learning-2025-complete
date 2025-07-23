@@ -5,14 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx prisma generate && nodemon index.js"
+    "start": "nodemon index.js",
+    "build:css": "tailwindcss -i ./styles/input.css -o ./public/css/style.css",
+    "dev:server": "nodemon -L index.js",
+    "watch:css": "tailwindcss -i ./styles/input.css -o ./public/css/style.css --watch --poll",
+    "dev": "concurrently \"npm:dev:server\" \"npm:watch:css\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@prisma/client": "^6.10.1",
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "ejs": "^3.1.10",
@@ -22,8 +25,11 @@
     "nodemon": "^3.1.10"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.2.0",
     "cookie-parser": "^1.4.7",
-    "prisma": "^6.10.1"
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1"
   },
   "prisma": {
     "seed": "node prisma/seed.js"
