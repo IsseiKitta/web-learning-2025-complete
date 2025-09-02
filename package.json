@@ -4,34 +4,38 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js",
-    "build:css": "tailwindcss -i ./styles/input.css -o ./public/css/style.css",
-    "dev:server": "nodemon -L index.js",
-    "watch:css": "tailwindcss -i ./styles/input.css -o ./public/css/style.css --watch --poll",
-    "dev": "concurrently \"npm:dev:server\" \"npm:watch:css\""
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "serve": "nodemon ./dist/src/index.js",
+    "dev": "mkdir -p dist/sequelize/config/ && cp sequelize/config/config.json dist/sequelize/config/config.json && concurrently \"tsc --watch\" \"nodemon --watch dist ./dist/src/index.js\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
-    "mysql2": "^3.14.1",
-    "nodemon": "^3.1.10"
+    "mysql2": "^3.14.1"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.21",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.1.0",
+    "@types/sequelize": "^4.28.20",
+    "app-root-path": "^3.1.0",
     "concurrently": "^9.2.0",
     "cookie-parser": "^1.4.7",
-    "postcss": "^8.5.6",
-    "postcss-cli": "^11.0.1"
-  },
-  "prisma": {
-    "seed": "node prisma/seed.js"
+    "dotenv": "^17.2.1",
+    "nodemon": "^3.1.10",
+    "sequelize": "^6.37.7",
+    "sequelize-cli": "^6.6.3",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
   }
 }
+
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/taskList.css" />
+    <title>TaskMaster - My Tasks</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="task-lists">
+    <header class="task-list__header">
+      <h1 class="task-list__header-title">My Tasks</h1>
+    </header>
+    <nav class="task-filter">
+      <ul class="task-filter__list">
+        <li class="task-filter__item active">
+          <span class="task-filter__label">All</span>
+        </li>
+        <li class="task-filter__item">
+          <span class="task-filter__label">In Progress</span>
+        </li>
+        <li class="task-filter__item">
+          <span class="task-filter__label">Completed</span>
+        </li>
+      </ul>
+    </nav>
+    <table class="task-table">
+      <thead class="task-table__header">
+        <tr class="task-table__header-record">
+          <th class="task-table__header-cell">Task</th>
+          <th class="task-table__header-cell">Due Date</th>
+          <th class="task-table__header-cell">Status</th>
+        </tr>
+      </thead>
+      <tbody class="task-table__body">
+        <tr class="task-table__body-record">
+          <td class="task-table__body-cell">
+            <p class="task-table__body-cell__content">Grocery Shopping</p>
+          </td>
+          <td class="task-table__body-cell">
+            <p class="task-table__body-cell__content">Today</p>
+          </td>
+          <td class="task-table__body-cell">
+            <p class="task-table__body-cell__content">In Progress</p>
+          </td>
+        </tr>
+        <tr class="task-table__body-record">
+          <td class="task-table__body-cell">
+            <p class="task-table__body-cell__content">Book Appointment</p>
+          </td>
+          <td class="task-table__body-cell">
+            <p class="task-table__body-cell__content">Tomorrow</p>
+          </td>
+          <td class="task-table__body-cell">
+            <p class="task-table__body-cell__content">In Progress</p>
+          </td>
+        </tr>
+        <tr class="task-table__body-record">
+          <td class="task-table__body-cell">
+            <p class="task-table__body-cell__content">Pay Bills</p>
+          </td>
+          <td class="task-table__body-cell">
+            <p class="task-table__body-cell__content">In 2 Days</p>
+          </td>
+          <td class="task-table__body-cell">
+            <p class="task-table__body-cell__content">In Progress</p>
+          </td>
+        </tr>
+        <tr class="task-table__body-record">
+          <td class="task-table__body-cell">
+            <p class="task-table__body-cell__content">Plan Vacation</p>
+          </td>
+          <td class="task-table__body-cell">
+            <p class="task-table__body-cell__content">In 3 Days</p>
+          </td>
+          <td class="task-table__body-cell">
+            <p class="task-table__body-cell__content">In Progress</p>
+          </td>
+        </tr>
+        <tr class="task-table__body-record">
+          <td class="task-table__body-cell">
+            <p class="task-table__body-cell__content">Renew Subscription</p>
+          </td>
+          <td class="task-table__body-cell">
+            <p class="task-table__body-cell__content">In 4 Days</p>
+          </td>
+          <td class="task-table__body-cell">
+            <p class="task-table__body-cell__content">In Progress</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

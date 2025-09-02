@@ -1,1 +1,0 @@
-INSERT INTO USERS (name, password_hash) VALUES ('user', '$2b$10$PE38FAldUHUWMi9JevdKK.MGupq8Fbcr9o6SNQCs49rQDnLfdmLLG');

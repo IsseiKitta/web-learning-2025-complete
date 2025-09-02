@@ -5,10 +5,13 @@ services:
       - "3000:3000"
       - "5555:5555"
     volumes:
-      - .:/app
-      - /app/node_modules
+      - .:/app # ホスト側のカレントディレクトリをコンテナ内の/appにマウント
+    env_file:
+      - .env # 環境変数ファイルを明示的に指定
     depends_on:
       - db
+    networks:
+      - app-network
 
   db:
     image: mysql:8.0
@@ -21,7 +24,12 @@ services:
       - "13306:3306"
     volumes:
       - db-data:/var/lib/mysql
-      - ./sql:/docker-entrypoint-initdb.d
+    networks:
+      - app-network
 
 volumes:
   db-data:
+
+networks:
+  app-network:
+    driver: bridge
