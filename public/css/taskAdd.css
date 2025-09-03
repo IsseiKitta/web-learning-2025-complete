@@ -5,8 +5,8 @@
   box-sizing: border-box;
 }
 
-/* タスク編集ページのコンテナ */
-.task-edit {
+/* タスク追加ページのコンテナ */
+.task-add {
   display: flex;
   width: 100%;
   max-width: 800px;
@@ -18,7 +18,7 @@
 }
 
 /* ヘッダーセクション */
-.task-edit__header {
+.task-add__header {
   display: flex;
   width: 100%;
   height: 80px;
@@ -30,7 +30,7 @@
 }
 
 /* ヘッダータイトル */
-.task-edit__header-title {
+.task-add__header-title {
   align-self: stretch;
   color: #0d141c;
   font-feature-settings: "dlig" on;
@@ -42,7 +42,7 @@
 }
 
 /* フォーム */
-.task-edit__form {
+.task-add__form {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -52,7 +52,7 @@
 }
 
 /* フォームグループ */
-.task-edit__form-group {
+.task-add__form-group {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -60,7 +60,7 @@
 }
 
 /* ラベル */
-.task-edit__label {
+.task-add__label {
   color: #0d141c;
   font-size: 16px;
   font-weight: 500;
@@ -68,7 +68,7 @@
 }
 
 /* テキスト入力 */
-.task-edit__input {
+.task-add__input {
   display: flex;
   width: 100%;
   padding: 12px 16px;
@@ -83,8 +83,14 @@
   color: #0d141c;
 }
 
+/* プレースホルダー */
+.task-add__input::placeholder,
+.task-add__textarea::placeholder {
+  color: #9cabba;
+}
+
 /* テキストエリア */
-.task-edit__textarea {
+.task-add__textarea {
   display: flex;
   width: 100%;
   padding: 12px 16px;
@@ -103,7 +109,7 @@
 }
 
 /* セレクト */
-.task-edit__select {
+.task-add__select {
   display: flex;
   width: 100%;
   padding: 12px 16px;
@@ -120,7 +126,7 @@
 }
 
 /* ボタンコンテナ */
-.task-edit__buttons {
+.task-add__buttons {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -129,7 +135,7 @@
 }
 
 /* キャンセルボタン */
-.task-edit__cancel-button {
+.task-add__cancel-button {
   display: flex;
   padding: 12px 24px;
   justify-content: center;
@@ -146,12 +152,12 @@
   transition: all 0.2s;
 }
 
-.task-edit__cancel-button:hover {
+.task-add__cancel-button:hover {
   background: #f5f7fa;
 }
 
-/* 保存ボタン */
-.task-edit__save-button {
+/* 作成ボタン */
+.task-add__create-button {
   display: flex;
   padding: 12px 24px;
   justify-content: center;
@@ -167,40 +173,40 @@
   transition: all 0.2s;
 }
 
-.task-edit__save-button:hover {
+.task-add__create-button:hover {
   background: #008ae6;
 }
 
 /* フォーカス時のスタイル */
-.task-edit__input:focus,
-.task-edit__textarea:focus,
-.task-edit__select:focus {
+.task-add__input:focus,
+.task-add__textarea:focus,
+.task-add__select:focus {
   outline: none;
   border-color: #0d99ff;
   box-shadow: 0 0 0 2px rgba(13, 153, 255, 0.2);
 }
 
 /* エラー時のスタイル */
-.task-edit__input.error,
-.task-edit__textarea.error,
-.task-edit__select.error {
+.task-add__input.error,
+.task-add__textarea.error,
+.task-add__select.error {
   border-color: #ff3b30;
 }
 
 /* レスポンシブスタイル */
 @media screen and (max-width: 768px) {
-  .task-edit {
+  .task-add {
     padding: 0 16px;
   }
 
-  .task-edit__buttons {
+  .task-add__buttons {
     flex-direction: column;
     width: 100%;
     gap: 12px;
   }
 
-  .task-edit__cancel-button,
-  .task-edit__save-button {
+  .task-add__cancel-button,
+  .task-add__create-button {
     width: 100%;
   }
 }

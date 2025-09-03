@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/taskEdit.css" />
+    <title>TaskMaster - Edit Task</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="task-edit">
+      <header class="task-edit__header">
+        <h1 class="task-edit__header-title">Edit Task</h1>
+      </header>
+
+      <form method="post" action="" class="task-edit__form">
+        <div class="task-edit__form-group">
+          <label for="title" class="task-edit__label">Title</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            value=""
+            class="task-edit__input"
+            required
+          />
+        </div>
+
+        <div class="task-edit__form-group">
+          <label for="description" class="task-edit__label">Description</label>
+          <textarea
+            id="description"
+            name="description"
+            class="task-edit__textarea"
+            rows="4"
+          >
+aaaaa</textarea
+          >
+        </div>
+
+        <div class="task-edit__form-group">
+          <label for="dueDate" class="task-edit__label">Due Date</label>
+          <input
+            type="date"
+            id="dueDate"
+            name="dueDate"
+            value=""
+            class="task-edit__input"
+          />
+        </div>
+
+        <div class="task-edit__form-group">
+          <label for="status" class="task-edit__label">Status</label>
+          <select id="status" name="status" class="task-edit__select">
+            <option value="Not Started">Not Started</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </div>
+
+        <div class="task-edit__buttons">
+          <a href="/tasks" class="task-edit__cancel-button">Cancel</a>
+          <button type="submit" class="task-edit__save-button">
+            Save Changes
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

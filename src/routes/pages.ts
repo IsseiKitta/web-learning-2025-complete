@@ -10,8 +10,12 @@ router.get("/mypage", (req: Request, res: Response) => {
   res.render("taskList");
 });
 
-router.get("/edit", (req: Request, res: Response) => {
+router.get("/taskedit", (req: Request, res: Response) => {
   res.render("taskEdit");
+});
+
+router.get("/taskadd", (req: Request, res: Response) => {
+  res.render("taskAdd");
 });
 
 export default router;
